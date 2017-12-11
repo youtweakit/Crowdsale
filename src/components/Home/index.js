@@ -46,7 +46,7 @@ export class Home extends Component {
               <p className="description"> 
 	      Realise and Monetise your ideas like never before!
               <br/>Based on <a href="https://github.com/TokenMarketNet/ico">TokenMarket</a>. 
-	      <br/>We build first worldwide social project on Oracles Network!</a>
+	      <br/>We build first worldwide social project on Oracles Network!
               </p>
               <div className="buttons">
                  <a onClick={this.goToCrowdsalePageH} className="button button_fill">Crowdsale Page</a>
