@@ -6,7 +6,7 @@ export const Footer = () => (
 	<footer className="footer">
 		<div className="container">
 			<p className="rights">2017 YouTweak.iT on Oracles Network. All rights reserved.</p>
-     
+     <Link className="logo" to='/'></Link>
 			<div className="socials">
 	    <a href="https://twitter.com/youtweak" className="social social_twitter"></a>
         <a href="https://www.oracles.org" className="social social_oracles"></a>
