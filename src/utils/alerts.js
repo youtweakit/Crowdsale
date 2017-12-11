@@ -4,7 +4,7 @@ import 'sweetalert/dist/sweetalert.css';
 export function noMetaMaskAlert() {
     sweetAlert({
       title: "Warning",
-      text: "You don't have Metamask installed. Check Without Metamask <a href='https://hackmd.io/s/SJSvCFJWz' target='blank'>instructions</a>.",
+      text: "You don't have Metamask installed. Check Without Metamask <a href='https://hackmd.io/s/HkTHtrhZM#' target='blank'>instructions</a>.",
       html: true,
       type: "warning"
     });
