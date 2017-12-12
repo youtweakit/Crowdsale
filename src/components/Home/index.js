@@ -50,8 +50,8 @@ export class Home extends Component {
 	      <br/>PAUSED DUE EXTREME GAS PRICE VOLATILITY TILL 13.12.2017!
               </p>
               <div className="buttons">
-               //  <a onClick={this.goToCrowdsalePageH} className="button button_fill">Crowdsale Page</a>
-               // <a onClick={this.goToInvestPageH} className="button button_fill">Invest Page</a> 
+                 <a onClick= className="button button_fill">Crowdsale Page</a>
+                <a onClick= className="button button_fill">Invest Page</a> 
               </div>
             </div>
           </div>
