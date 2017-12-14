@@ -11,6 +11,7 @@ export class Home extends Component {
     super(props);
     this.state = defaultState
   }
+}
  goToInvestPageH = () => {
   		let queryStr = "";
   		if (!ICOConfig.crowdsaleContractURL || !ICOConfig.networkID) {
