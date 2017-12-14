@@ -48,7 +48,7 @@ export class Home extends Component {
               <br/>Based on <a href="https://github.com/TokenMarketNet/ico">TokenMarket</a>. 
 	      <br/>We build first worldwide social project on Oracles Network!
 	      <br/>Crowdsale STARTS at 23:00 PM 14.12.2017
-	      <br/>BE SHURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
+	      <br/>BE SURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
                  <a onClick={this.goToCrowdsalePageH()} className="button button_fill">Crowdsale Page</a>
