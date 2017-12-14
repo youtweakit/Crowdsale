@@ -11,8 +11,7 @@ export class Home extends Component {
     super(props);
     this.state = defaultState
   }
-}
- goToInvestPageH = () => {
+goToInvestPageH = () => {
   		let queryStr = "";
   		if (!ICOConfig.crowdsaleContractURL || !ICOConfig.networkID) {
   			if (this.state.contracts.crowdsale.addr) {
@@ -52,8 +51,8 @@ export class Home extends Component {
 	      <br/>BE SURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
-                 <a onClick={this.goToCrowdsalePageH()} className="button button_fill">Crowdsale Page</a>
-                <a onClick={this.goToInvestPageH()} className="button button_fill">Invest Page</a> 
+                 <a onClick={this.goToCrowdsalePageH} className="button button_fill">Crowdsale Page</a>
+                <a onClick={this.goToInvestPageH} className="button button_fill">Invest Page</a> 
               </div>
             </div>
           </div>
