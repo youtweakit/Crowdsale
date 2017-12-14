@@ -51,8 +51,8 @@ export class Home extends Component {
 	      <br/>BE SHURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
-                 <a onClick= className={this.goToCrowdsalePageH()} "button button_fill">Crowdsale Page</a>
-                <a onClick= className={this.goToInvestPageH()} "button button_fill">Invest Page</a> 
+                 <a onClick={this.goToCrowdsalePageH()} className="button button_fill">Crowdsale Page</a>
+                <a onClick={this.goToInvestPageH()} className="button button_fill">Invest Page</a> 
               </div>
             </div>
           </div>
