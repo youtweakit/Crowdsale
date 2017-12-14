@@ -47,11 +47,12 @@ export class Home extends Component {
 	      Realise and Monetise your ideas like never before!
               <br/>Based on <a href="https://github.com/TokenMarketNet/ico">TokenMarket</a>. 
 	      <br/>We build first worldwide social project on Oracles Network!
-	      <br/>PAUSED DUE EXTREME GAS PRICE VOLATILITY TILL 13.12.2017!
+	      <br/>Crowdsale STARTS at 23:00 PM 14.12.2017
+	      <br/>BE SHURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
-                 <a onClick= className="button button_fill">Crowdsale Page</a>
-                <a onClick= className="button button_fill">Invest Page</a> 
+                 <a onClick= className={this.goToCrowdsalePageH()} "button button_fill">Crowdsale Page</a>
+                <a onClick= className={this.goToInvestPageH()} "button button_fill">Invest Page</a> 
               </div>
             </div>
           </div>
