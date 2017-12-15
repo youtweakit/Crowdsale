@@ -21,13 +21,6 @@ export function checkWeb3(web3) {
           if (accounts.length === 0) {
             return noMetaMaskAlert();
           }
-		 if (web3) {
-        this.web3 = web3
-        web3.eth.getAccounts().then((accounts) => {
-          this.accounts = accounts
-          this.curAddress = accounts[0]
-        })
-      }
         });
       });
     }, 500);
@@ -45,6 +38,13 @@ export function getWeb3(cb) {
 	if (typeof web3 === 'undefined') {
     // no web3, use fallback
     console.error("Please use a web3 browser");
+//1
+       var this.web3 = web3;
+        web3.eth.getAccounts().then((accounts) => {
+          this.accounts = accounts
+          this.curAddress = accounts[0]
+        });
+  //2    
     const devEnvironment = process.env.NODE_ENV === 'development';
     if (devEnvironment) {
       web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
