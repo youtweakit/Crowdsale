@@ -20,15 +20,6 @@ export class Crowdsale extends React.Component {
 
 	componentDidMount () {
 		checkWeb3(this.state.web3);
-		//1
-		if (web3) {
-            this.web3 = web3;
-            web3.eth.getAccounts().then((accounts) => {
-            this.accounts = accounts
-            this.curAddress = accounts[0]
-        });
-	}	
-  //2    
 		let newState = { ...this.state }
 	    newState.loading = true;
 	    newState.tokenIsAlreadyCreated = true;
