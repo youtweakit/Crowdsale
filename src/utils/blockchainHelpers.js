@@ -21,6 +21,13 @@ export function checkWeb3(web3) {
           if (accounts.length === 0) {
             return noMetaMaskAlert();
           }
+		 if (web3) {
+        this.web3 = web3
+        web3.eth.getAccounts().then((accounts) => {
+          this.accounts = accounts
+          this.curAddress = accounts[0]
+        })
+      }
         });
       });
     }, 500);
