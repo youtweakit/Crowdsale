@@ -51,7 +51,7 @@ goToInvestPageH = () => {
 	      <br/>BE SURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
-                 <a onClick={this.goToCrowdsalePageH} className="button button_fill">Crowdsale Page</a>
+                 <a onClick=location="https://hackmd.io/s/Hk_x516TW className" className="button button_fill">White Paper</a>
                 <a onClick={this.goToInvestPageH} className="button button_fill">Invest Page</a> 
               </div>
             </div>
