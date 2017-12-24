@@ -36,12 +36,10 @@ goToInvestPageH = () => {
 	      Realise and Monetise your ideas like never before!
               <br/>Based on <a href="https://github.com/TokenMarketNet/ico">TokenMarket</a>. 
 	      <br/>We build first worldwide social project on Oracles Network!
-	      <br/>Crowdsale STARTS at 23:00 PM 14.12.2017
+	      <br/><a href="https://hackmd.io/s/Hk_x516TW" target="_blank">White Paper</a>
 	      <br/>BE SURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
-	         <a onClick="location.href = 'https://hackmd.io/s/Hk_x516TW'" className="button button_fill" target="_blank">White Paper</a>
-                // <a href onClick="" className="button button_fill" target="_blank">White Paper</a>
                 <a onClick={this.goToInvestPageH} className="button button_fill">Invest Page</a> 
               </div>
             </div>
