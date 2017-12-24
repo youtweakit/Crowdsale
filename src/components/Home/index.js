@@ -24,18 +24,7 @@ goToInvestPageH = () => {
       this.props.history.push('/invest' + queryStr);
   	}
   
-  goToCrowdsalePageH = () => {
-  		let queryStr = "";
-  		if (!ICOConfig.crowdsaleContractURL || !ICOConfig.networkID) {
-  			if (this.state.contracts.crowdsale.addr) {
-	  			queryStr = "?addr=" + this.state.contracts.crowdsale.addr[0];
-	  			if (this.state.networkID)
-	  				queryStr += "&networkID=" + this.state.networkID;
-	  		}
-  		}
-
-      this.props.history.push('/crowdsale' + queryStr);
-  	}
+ 
   render() {
     return (
       <div>
@@ -51,7 +40,7 @@ goToInvestPageH = () => {
 	      <br/>BE SURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
-	         <button onclick="location.href = 'https://hackmd.io/s/Hk_x516TW'" className="button button_fill" target="_blank">White Paper</button>
+	         <a onClick="location.href = 'https://hackmd.io/s/Hk_x516TW'" className="button button_fill" target="_blank">White Paper</a>
                 // <a href onClick="" className="button button_fill" target="_blank">White Paper</a>
                 <a onClick={this.goToInvestPageH} className="button button_fill">Invest Page</a> 
               </div>
