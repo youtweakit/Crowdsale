@@ -43,10 +43,10 @@ goToInvestPageH = () => {
           <div className="crowdsale">
             <div className="container">
               <h1 className="title">YouTweak.iT</h1>
-              <p className="description"> 
-	      Realise and Monetise your ideas like never before!
+              <h2>Realise and Monetise your Ideas like never before!</h2>
+	      <p className="description">
               <br/>Based on <a href="https://github.com/poanetwork/ico-wizard">PoA Network's ICO Wizard</a>. 
-	      <br/>We build first worldwide social project on Oracles Network!
+	      <br/>We build first worldwide social project on PoA Network!
 	      <br/><a href="https://hackmd.io/s/Hk_x516TW" target="_blank">White Paper</a>
 	      <br/>BE SURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
