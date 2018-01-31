@@ -23,7 +23,18 @@ goToInvestPageH = () => {
 
       this.props.history.push('/invest' + queryStr);
   	}
-  
+ goToCrowdsalePageH = () => {
+  		let queryStr = "";
+  		if (!ICOConfig.crowdsaleContractURL || !ICOConfig.networkID) {
+  			if (this.state.contracts.crowdsale.addr) {
+	  			queryStr = "?addr=" + this.state.contracts.crowdsale.addr[0];
+	  			if (this.state.networkID)
+	  				queryStr += "&networkID=" + this.state.networkID;
+	  		}
+  		}
+
+      this.props.history.push('/crowdsale' + queryStr);
+}
  
   render() {
     return (
@@ -34,13 +45,14 @@ goToInvestPageH = () => {
               <h1 className="title">YouTweak.iT</h1>
               <p className="description"> 
 	      Realise and Monetise your ideas like never before!
-              <br/>Based on <a href="https://github.com/TokenMarketNet/ico">TokenMarket</a>. 
+              <br/>Based on <a href="https://github.com/poanetwork/ico-wizard">PoA Network's ICO Wizard</a>. 
 	      <br/>We build first worldwide social project on Oracles Network!
 	      <br/><a href="https://hackmd.io/s/Hk_x516TW" target="_blank">White Paper</a>
 	      <br/>BE SURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
                 <a onClick={this.goToInvestPageH} className="button button_fill">Invest Page</a> 
+	        <a onClick={this.goToCrowdsalePageH} className="button button_fill">Statistics page</a>
               </div>
             </div>
           </div>
