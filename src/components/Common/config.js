@@ -7,7 +7,7 @@ const networks = {
 	oraclesTest: 12648430
 }
 export const ICOConfig = {
-	crowdsaleContractURL: '0x460a781De671Ca6ff0F7D6aF92031D69Fde9Dd06',
+	crowdsaleContractURL: '0xaC31924B7e27B063E1ED4E3d7234a1E4Aa32D81D',
 	networkID: networks.mainnet
 };
 
