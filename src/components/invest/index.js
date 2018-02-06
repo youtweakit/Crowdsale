@@ -355,7 +355,7 @@ export class Invest extends React.Component {
           <p className="invest-title">Invest page</p>
           <p className="invest-description">
             {"Here you can invest in the crowdsale campaign. At the momemnt, you need Metamask client to invest into the crowdsale. If you don't have Metamask, Please Check THIS  "}
-            <a href="https://hackmd.io/s/SJSvCFJWz">PAGE</a>.
+            <a href="https://hackmd.io/s/HkTHtrhZM">PAGE</a>.
           </p>
         </div>
         <div className="invest-table-cell invest-table-cell_right">
