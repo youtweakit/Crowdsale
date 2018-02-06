@@ -11,7 +11,7 @@ export class Home extends Component {
     super(props);
     this.state = defaultState
   }
- goToInvestPageH = () => {
+goToInvestPageH = () => {
   		let queryStr = "";
   		if (!ICOConfig.crowdsaleContractURL || !ICOConfig.networkID) {
   			if (this.state.contracts.crowdsale.addr) {
@@ -23,8 +23,7 @@ export class Home extends Component {
 
       this.props.history.push('/invest' + queryStr);
   	}
-  
-  goToCrowdsalePageH = () => {
+ goToCrowdsalePageH = () => {
   		let queryStr = "";
   		if (!ICOConfig.crowdsaleContractURL || !ICOConfig.networkID) {
   			if (this.state.contracts.crowdsale.addr) {
@@ -35,7 +34,8 @@ export class Home extends Component {
   		}
 
       this.props.history.push('/crowdsale' + queryStr);
-  	}
+}
+ 
   render() {
     return (
       <div>
@@ -43,14 +43,16 @@ export class Home extends Component {
           <div className="crowdsale">
             <div className="container">
               <h1 className="title">YouTweak.iT</h1>
-              <p className="description"> 
-	      Realise and Monetise your ideas like never before!
-              <br/>Based on <a href="https://github.com/TokenMarketNet/ico">TokenMarket</a>. 
-	      <br/>We build first worldwide social project on Oracles Network!</a>
+              <h2>Embody and Monetise your Ideas like never before!</h2>
+	      <p className="description">
+              <br/>Based on <a href="https://github.com/poanetwork/ico-wizard">PoA Network's ICO Wizard</a>. 
+	      <br/>We build first worldwide social project on PoA Network!
+	      <br/><a href="https://hackmd.io/s/Hk_x516TW" target="_blank">White Paper</a>
+	      <br/>BE SURE YOU HAVE UPDATED METAMASK PLUGIN INSTALLED!
               </p>
               <div className="buttons">
-                 <a onClick={this.goToCrowdsalePageH} className="button button_fill">Crowdsale Page</a>
                 <a onClick={this.goToInvestPageH} className="button button_fill">Invest Page</a> 
+	        <a onClick={this.goToCrowdsalePageH} className="button button_fill">Statistics page</a>
               </div>
             </div>
           </div>
