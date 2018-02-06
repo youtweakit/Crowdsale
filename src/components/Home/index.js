@@ -43,7 +43,7 @@ goToInvestPageH = () => {
           <div className="crowdsale">
             <div className="container">
               <h1 className="title">YouTweak.iT</h1>
-              <h2>Realise and Monetise your Ideas like never before!</h2>
+              <h2>Embody and Monetise your Ideas like never before!</h2>
 	      <p className="description">
               <br/>Based on <a href="https://github.com/poanetwork/ico-wizard">PoA Network's ICO Wizard</a>. 
 	      <br/>We build first worldwide social project on PoA Network!
